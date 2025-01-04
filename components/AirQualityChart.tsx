@@ -54,25 +54,25 @@ export default function AirQualityChart({ data }: AirQualityChartProps) {
                 }}
               />
               <ReferenceLine
-                y={50}
+                y={1000}
                 label="Good"
                 stroke="green"
                 strokeDasharray="3 3"
               />
               <ReferenceLine
-                y={100}
+                y={2000}
                 label="Moderate"
                 stroke="yellow"
                 strokeDasharray="3 3"
               />
               <ReferenceLine
-                y={150}
+                y={3500}
                 label="Unhealthy"
                 stroke="orange"
                 strokeDasharray="3 3"
               />
               <ReferenceLine
-                y={200}
+                y={5000}
                 label="Very Unhealthy"
                 stroke="red"
                 strokeDasharray="3 3"

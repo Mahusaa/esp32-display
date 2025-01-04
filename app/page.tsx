@@ -37,7 +37,7 @@ export default function AirQualityDashboard() {
         setCurrentAQI(newData.value);
         setAirQualityData((prev) => [...prev, newData]);
         setLogs((prev) =>
-          [`${newData.time}: AQI is ${newData.value}`, ...prev].slice(0, 10)
+          [`${newData.time}: ppm  is ${newData.value}`, ...prev].slice(0, 10)
         );
       }
     });
