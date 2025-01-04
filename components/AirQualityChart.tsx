@@ -22,7 +22,7 @@ export default function AirQualityChart({ data }: AirQualityChartProps) {
         <ChartContainer
           config={{
             aqi: {
-              label: "AQI",
+              label: "ppm",
               color: "hsl(var(--primary))",
             },
           }}
@@ -35,7 +35,7 @@ export default function AirQualityChart({ data }: AirQualityChartProps) {
             >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="time" />
-              <YAxis />
+              <YAxis domain={[300, 6000]} />
               <Tooltip
                 content={({ active, payload }) => {
                   if (active && payload && payload.length) {
